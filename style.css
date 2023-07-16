@@ -7,6 +7,7 @@
 
 body {
   background-color: #001c30;
+    overflow-x: hidden
 }
 html {
     scroll-behavior: smooth;
@@ -30,8 +31,8 @@ a:hover {
   color: #176B87;
 }
 .navbar {
-  /* position: fixed;
-  left: 17%; */
+  position: fixed;
+  left: 17%;
   top: 0;
   display: flex;
   align-items: center;
