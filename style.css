@@ -7,7 +7,7 @@
 
 body {
   background-color: #001c30;
-    overflow-x: hidden
+  overflow-x: hidden
 }
 html {
     scroll-behavior: smooth;
@@ -106,30 +106,15 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+.dropdown-menu li a{
+  color: #fff;
+}
 .dropdown-menu .action-btn {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-@media (max-width: 922px) {
-  .links,
-  .action-btn {
-    display: none;
-  }
-  .toggle-btn {
-    display: block;
-  }
 
-  .dropdown-menu {
-    display: block;
-  }
-}
-@media (max-width: 576px) {
-  .dropdown-menu {
-    left: 2rem;
-    width: unset;
-  }
-}
 
 /* ========================================= */
 .container1 {
@@ -288,7 +273,8 @@ a:hover {
     background-size: 100%;
     width: 500px;
     height: 500px;
-    margin: auto;
+    margin-right: 3rem;
+    margin-left: 3rem;
     border-radius: 20px;
     display: flex;
     justify-content:flex-start;
@@ -460,6 +446,12 @@ a:hover {
 .content-right {
     width: 100%;
 }
+.container3-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
 
 form input,
 form textarea {
@@ -483,4 +475,153 @@ footer .container {
     justify-content: center;
     align-items: center;
 
+}
+@media only screen and (max-width: 600px) {
+  
+  .contact-left,
+  .contact-right {
+      flex-basis: 100%;
+  }
+}
+/* ===================================== */
+@media (max-width: 1400px) {
+  .container3{
+    height: auto;
+  }
+  .goal-content{
+    margin-top: 5rem;
+  }
+.service{
+    position: relative;
+    left:5%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.right-image img{
+    position: relative;
+    left: -7%;
+    width: 70%;
+}
+.container3-main > .service-1{
+  width: 400px !important;
+  height: 400px !important;
+
+}
+.container3-main > .service-2{
+  width: 400px !important;
+  height: 400px !important;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.container3-main > .service-3{
+  width: 400px !important;
+  height: 400px !important;
+}
+@media(max-width: 1200px){
+  .navbar{
+    max-width: 50rem !important;
+  }
+  .container1-aboutUs {
+    position: absolute;
+    top: 21%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  .container1-aboutUs > .left-content {
+    grid-column: 1;
+    padding-left: 5rem;
+  }
+  .container1-aboutUs > .left-content span{
+      font-weight: 600;
+      color: #176B87;
+      font-size: 2rem;
+  
+  }
+  .change-service{
+    margin-top: 4rem !important;
+    font-size: 2.5rem !important;
+  }
+  .service{
+    position: relative;
+    left:0%;
+    font-size: 3rem !important;
+    font-weight: 700;
+}
+.right-image img{
+    width: 60% !important;
+    position: relative;
+    left: -60%;
+    width: 70%;
+}
+.container2-main-right .about-us-content{
+  font-size: 1.5rem;
+}
+.service{
+  position: relative;
+  left:5%;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.right-image img{
+  position: relative;
+  left: 10%;
+  width: 70%;
+}
+.container3-main{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  grid-gap: 40px !important;
+  margin-top: 50px !important;
+}
+
+}
+
+@media (max-width: 922px) {
+  .navbar{
+    width: 60%;
+  }
+  .links,
+  .action-btn {
+    display: none ;
+  }
+  .toggle-btn {
+    display: block ;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu.open{
+    left: 2rem;
+    top: 7%;
+    width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .navbar{
+    width: 64%;
+  }
+  .dropdown-menu {
+    left: 2rem;
+    width: unset;
+  }
+  .service{
+    position: relative;
+    left:0%;
+    font-size: 2.6rem !important;
+    font-weight: 700;
+}
+.right-image img{
+    width: 50% !important;
+    position: relative;
+    left: 40%;
+    width: 70%;
+}
+
+.contact-left,
+.contact-right {
+    flex-basis: 100%;
+}
 }
