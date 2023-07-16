@@ -613,6 +613,17 @@ footer .container {
     font-size: 2.6rem !important;
     font-weight: 700;
 }
+.container1-aboutUs > .right-content img {
+  position: relative;
+  right: 10%;
+  grid-column: 2;
+  border-radius: 20px;
+  width: 110%;
+}
+.container2-main > .container2-main-left img {
+  position: relative;
+  width: 116%;
+}
 .right-image img{
     width: 50% !important;
     position: relative;
