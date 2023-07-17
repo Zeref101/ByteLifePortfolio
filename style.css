@@ -623,3 +623,76 @@ footer .container {
     }
   }
 }
+@media(max-width: 576px){
+  .container1-aboutUs {
+    position: absolute;
+    top: 21%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  .container1-aboutUs > .left-content {
+    grid-row: 1;
+    width: 173%;
+  }
+
+  .change-service{
+    font-size: 1.8rem !important;
+  }
+  .container1-aboutUs > .right-content  {
+    position: relative;
+    left: 50%;
+    grid-row: 2;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .container2-main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .container2-main > .container2-main-left {
+    grid-row: 2;
+    padding-left: 7rem;
+    float: right;
+    width: 100%;
+  }
+  .container2-main > .container2-main-left img {
+    width: 100%;
+  }
+  .container2 > .container2-main-right {
+    grid-row: 1;
+  }
+  .container2-main-right .about-us-content {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    width: 194%;
+  }
+  .about-us {
+    left: 50%;
+    position: relative;
+  }
+  .container2-main > .container2-main-left img {
+    width: 178%;
+  }
+  .right-image img {
+    width: 80% !important;
+    left: 30%;
+  }
+  .goal-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .goal{
+    grid-row:1;
+    width: 167%;
+  }
+  .goal-content img{
+    grid-row: 2;
+    width: 200%;
+    position: relative;
+    right: 100%;
+  }
+
+}
