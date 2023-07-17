@@ -623,20 +623,19 @@ footer .container {
     }
   }
 }
-@media(max-width: 576px){
-  html{
+@media (max-width: 576px) {
+  html {
     overflow-x: hidden;
   }
   .navbar {
     width: 65%;
   }
-  .nav-logo a{
+  .nav-logo a {
     font-size: 1.4rem !important;
   }
-  .dropdown-menu.open{
+  .dropdown-menu.open {
     left: 2rem;
     width: unset;
-
   }
   .container1-aboutUs {
     position: absolute;
@@ -653,18 +652,18 @@ footer .container {
     height: 200px;
   }
 
-  .change-service{
+  .change-service {
     font-size: 1.3rem !important;
   }
-  .right-content{
+  .right-content {
     margin-top: 2rem;
   }
-  .container1-aboutUs > .right-content  {
+  .container1-aboutUs > .right-content {
     position: relative;
     left: 30%;
     grid-row: 2;
     border-radius: 20px;
-    top:-50%;
+    top: -50%;
     width: 150%;
     font-size: 1rem;
   }
@@ -676,15 +675,15 @@ footer .container {
     grid-row: 2;
     padding-left: 7rem;
     float: right;
-    width: 120%;
+    width: 128%;
+    left: -21%;
+    position: relative;
   }
   .container2-main > .container2-main-left img {
     width: 100%;
   }
   .container2 > .container2-main-right {
     grid-row: 1;
-
-
   }
   .container2-main-right .about-us-content {
     margin-top: 3rem;
@@ -708,23 +707,23 @@ footer .container {
     display: grid;
     grid-template-rows: 1fr 1fr;
   }
-  .goal{
-    grid-row:1;
+  .goal {
+    grid-row: 1;
     width: 170%;
     padding: 0rem;
     font-size: 1.3rem !important;
     margin-left: 2rem !important;
   }
-  .goal span{
+  .goal span {
     font-size: 2rem;
   }
-  .goal-content img{
+  .goal-content img {
     grid-row: 2;
     width: 200%;
     position: relative;
     right: 100%;
   }
-  .contact-text{
+  .contact-text {
     font-size: 2.5rem;
   }
   .container3-main > .service-1 {
@@ -739,17 +738,17 @@ footer .container {
     width: 275px !important;
     height: 275px !important;
   }
-  .service-title{
+  .service-title {
     font-weight: 600;
     font-size: 1.2rem;
   }
-  .service-content{
+  .service-content {
     padding: 0;
     width: 100%;
     font-size: 1rem;
     overflow: scroll;
   }
-  .container1-aboutUs > .right-content{
+  .container1-aboutUs > .right-content {
     left: 21%;
   }
   .container1-aboutUs > .right-content img {
