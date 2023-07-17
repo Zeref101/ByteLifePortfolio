@@ -18,6 +18,12 @@ window.onscroll = ()=>{
         document.querySelector('.navbar').style.top = '0';
     }
     else{
+        const condition = dropDownMenu.classList.contains('open');
+        if(condition)
+        {
+          dropDownMenu.classList.toggle('open')
+          toggleBtnIcon.classList = condition?"fa-solid fa-bars":"fa-solid fa-xmark";
+        }
         document.querySelector('.navbar').style.top = '-60px';
     }
     prevScrollpos = currentScrollpos;

@@ -688,7 +688,7 @@ footer .container {
   }
   .container2-main-right .about-us-content {
     margin-top: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 194%;
     padding: 1.3rem;
   }
@@ -712,8 +712,11 @@ footer .container {
     grid-row:1;
     width: 170%;
     padding: 0rem;
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
     margin-left: 2rem !important;
+  }
+  .goal span{
+    font-size: 2rem;
   }
   .goal-content img{
     grid-row: 2;
@@ -724,5 +727,35 @@ footer .container {
   .contact-text{
     font-size: 2.5rem;
   }
-
+  .container3-main > .service-1 {
+    width: 275px !important;
+    height: 275px !important;
+  }
+  .container3-main > .service-2 {
+    width: 275px !important;
+    height: 275px !important;
+  }
+  .container3-main > .service-3 {
+    width: 275px !important;
+    height: 275px !important;
+  }
+  .service-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .service-content{
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+    overflow: scroll;
+  }
+  .container1-aboutUs > .right-content{
+    left: 21%;
+  }
+  .container1-aboutUs > .right-content img {
+    width: 100%;
+  }
+  .container1-aboutUs > .left-content {
+    width: 169%;
+  }
 }
