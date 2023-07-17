@@ -34,6 +34,7 @@ const features = [
   "Podcasting",
   "App Development Services",
   "Informative Content",
+  "Web Development Services"
 ];
 let i = 0;
 
@@ -45,7 +46,7 @@ setInterval(() => {
   changingName.classList.add("changingName-hidden");
   setTimeout(() => {
     changingName.classList.remove("changingName-hidden");
-    if (i === 4) {
+    if (i === 5) {
       i = 0;
     }
     const nextName = featureName(features, i);

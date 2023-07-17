@@ -349,7 +349,7 @@ a:hover {
   font-size: 2rem;
   font-weight: 700;
   z-index: 10;
-
+  color:#eee ;
 }
 /* ======================================== */
 .container4 {
@@ -496,6 +496,9 @@ footer .container {
 @media (max-width: 1400px) {
   .navbar{
     width: 62%;
+  }
+  .container2 {
+    height: auto;
   }
   .container3 {
     height: auto;
@@ -891,5 +894,22 @@ footer .container {
   }
   .container1-aboutUs > .left-content {
     width: 169%;
+  }
+}
+@media(max-width: 376px){
+  html{
+    overflow-x: hidden !important;
+  }
+  .container1-aboutUs > .left-content {
+    width: 148%;
+  }
+  .container1-aboutUs > .right-content {
+    position: relative;
+    left: 15%;
+    grid-row: 2;
+    border-radius: 20px;
+    top: -35% !important;
+    width: 134% !important;
+    font-size: 1rem;
   }
 }
