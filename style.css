@@ -611,6 +611,9 @@ footer .container {
     }
   }
   @media (max-width: 768px) {
+    html {
+      overflow-x: hidden;
+    }
     .navbar {
       width: 64%;
     }
@@ -624,9 +627,15 @@ footer .container {
       font-size: 2.6rem !important;
       font-weight: 700;
     }
+    .left-content strong{
+      font-size: 30px;
+    }
+    .change-service{
+      font-size: 25px !important;
+    }
     .container1-aboutUs > .right-content img {
-      /* position: relative;
-      right: 10%; */
+      position: relative;
+      right: 6%;
       grid-column: 2;
       border-radius: 20px;
       width: 110%;
@@ -645,6 +654,92 @@ footer .container {
     .contact-left,
     .contact-right {
       flex-basis: 100%;
+    }
+    .container1-aboutUs {
+      position: absolute;
+      top: 21%;
+      width: 100%;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      color: #fff;
+      font-size: 1.3rem;
+    }
+    .container1-aboutUs > .left-content {
+      grid-row: 1;
+      width: 173%;
+      height: 200px;
+    }
+  
+    .change-service {
+      font-size: 30px !important;
+    }
+    .right-content {
+      margin-top: 2rem;
+    }
+    .container1-aboutUs > .right-content {
+      position: relative;
+      left: 30%;
+      grid-row: 2;
+      border-radius: 20px;
+      top: -50%;
+      width: 130%;
+      font-size: 1rem;
+    }
+    .container2-main {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+    .container2-main > .container2-main-left {
+      grid-row: 2;
+      padding-left: 7rem;
+      float: right;
+      width: 100%;
+      left: 0%;
+      position: relative;
+    }
+    .container2-main > .container2-main-left img {
+      width: 100%;
+    }
+    .container2 > .container2-main-right {
+      grid-row: 1;
+    }
+    .container2-main-right .about-us-content {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+      width: 194%;
+      padding: 1.3rem;
+    }
+    .about-us {
+      left: 50%;
+      position: relative;
+      font-size: 2rem;
+    }
+    .container2-main > .container2-main-left img {
+      width: 178%;
+    }
+    .right-image img {
+      width: 80% !important;
+      left: 30%;
+    }
+    .goal-content {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+    .goal {
+      grid-row: 1;
+      width: 170%;
+      padding: 0rem;
+      font-size: 1.3rem !important;
+      margin-left: 2rem !important;
+    }
+    .goal span {
+      font-size: 2rem;
+    }
+    .goal-content img {
+      grid-row: 2;
+      width: 200%;
+      position: relative;
+      right: 100%;
     }
   }
 }
