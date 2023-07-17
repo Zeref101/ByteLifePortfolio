@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/mouldy-cheese');
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +50,9 @@ a:hover {
 
 .action-btn-div {
   padding-right: 1rem;
+}
+.nav-logo{
+  font-family: 'Mouldy Cheese', sans-serif !important;
 }
 .navbar .nav-logo a {
   font-size: 2rem;
@@ -186,6 +190,7 @@ a:hover {
 .container3 {
   width: 100%;
   height:150vh;
+  font-weight: 600
 }
 .service-banner {
   width: 100%;
@@ -214,7 +219,6 @@ a:hover {
   display: grid;
   margin-top: 10rem;
   grid-template-columns: 1fr 1fr 1fr;
-  color: #fff;
 }
 .container3-main > .service-1 {
   background-image: url(./asset/29d90b183be6d21ba0f72d53f66409a3.jpg);
@@ -242,7 +246,7 @@ a:hover {
   height: 0;
   width: 100%;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #64ccc5);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), #64ccc5);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -259,11 +263,11 @@ a:hover {
 
 .service-1:hover .layer {
   height: 100%;
-  color: #eee;
+  color: #000047;
 }
 .service-1:active .layer{
   height: 100%;
-  color: #eee;
+  color: #000047;
 }
 
 .service-1 img {
@@ -294,8 +298,13 @@ a:hover {
 }
 .service-2:hover .layer {
   height: 100%;
-  color: #eee;
+  color: #000047;
 }
+.service-2:active .layer{
+  height: 100%;
+  color: #000047;
+}
+
 
 .service-2 img {
   transform: scale(1.1);
@@ -325,16 +334,22 @@ a:hover {
 }
 .service-3:hover .layer {
   height: 100%;
-  color: #eee;
+  color: #000047;
 }
+.service-3:active .layer{
+  height: 100%;
+  color: #000047;
+}
+
 
 .service-3 img {
   transform: scale(1.1);
 }
 .service-title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   z-index: 10;
+
 }
 /* ======================================== */
 .container4 {
