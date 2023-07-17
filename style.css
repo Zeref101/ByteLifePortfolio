@@ -624,6 +624,20 @@ footer .container {
   }
 }
 @media(max-width: 576px){
+  html{
+    overflow-x: hidden;
+  }
+  .navbar {
+    width: 65%;
+  }
+  .nav-logo a{
+    font-size: 1.4rem !important;
+  }
+  .dropdown-menu.open{
+    left: 2rem;
+    width: unset;
+
+  }
   .container1-aboutUs {
     position: absolute;
     top: 21%;
@@ -631,15 +645,19 @@ footer .container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   .container1-aboutUs > .left-content {
     grid-row: 1;
     width: 173%;
+    height: 200px;
   }
 
   .change-service{
-    font-size: 1.8rem !important;
+    font-size: 1.3rem !important;
+  }
+  .right-content{
+    margin-top: 2rem;
   }
   .container1-aboutUs > .right-content  {
     position: relative;
@@ -648,6 +666,7 @@ footer .container {
     border-radius: 20px;
     top:-50%;
     width: 150%;
+    font-size: 1rem;
   }
   .container2-main {
     display: grid;
@@ -657,7 +676,7 @@ footer .container {
     grid-row: 2;
     padding-left: 7rem;
     float: right;
-    width: 100%;
+    width: 120%;
   }
   .container2-main > .container2-main-left img {
     width: 100%;
@@ -665,16 +684,18 @@ footer .container {
   .container2 > .container2-main-right {
     grid-row: 1;
 
+
   }
   .container2-main-right .about-us-content {
     margin-top: 3rem;
     font-size: 1.5rem;
     width: 194%;
-    padding: 1.5rem;
+    padding: 1.3rem;
   }
   .about-us {
     left: 50%;
     position: relative;
+    font-size: 2rem;
   }
   .container2-main > .container2-main-left img {
     width: 178%;
@@ -689,14 +710,19 @@ footer .container {
   }
   .goal{
     grid-row:1;
-    width: 167%;
-    padding: 2rem;
+    width: 170%;
+    padding: 0rem;
+    font-size: 1.3rem;
+    margin-left: 2rem !important;
   }
   .goal-content img{
     grid-row: 2;
     width: 200%;
     position: relative;
     right: 100%;
+  }
+  .contact-text{
+    font-size: 2.5rem;
   }
 
 }
