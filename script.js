@@ -33,7 +33,7 @@ const features = [
   "Social Media Content",
   "Podcasting",
   "App Development Services",
-  "informative content",
+  "Informative Content",
 ];
 let i = 0;
 
