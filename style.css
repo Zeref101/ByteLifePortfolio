@@ -643,10 +643,11 @@ footer .container {
   }
   .container1-aboutUs > .right-content  {
     position: relative;
-    left: 50%;
+    left: 30%;
     grid-row: 2;
     border-radius: 20px;
-    width: 100%;
+    top:-50%;
+    width: 150%;
   }
   .container2-main {
     display: grid;
@@ -663,11 +664,13 @@ footer .container {
   }
   .container2 > .container2-main-right {
     grid-row: 1;
+
   }
   .container2-main-right .about-us-content {
     margin-top: 3rem;
     font-size: 1.5rem;
     width: 194%;
+    padding: 1.5rem;
   }
   .about-us {
     left: 50%;
@@ -687,6 +690,7 @@ footer .container {
   .goal{
     grid-row:1;
     width: 167%;
+    padding: 2rem;
   }
   .goal-content img{
     grid-row: 2;
