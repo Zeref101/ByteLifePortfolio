@@ -141,6 +141,7 @@ a:hover {
   border-radius: 20px;
   width: 80%;
 }
+
 .change-service {
   margin-top: 2rem !important;
   font-size: 3.6rem !important;
@@ -179,12 +180,12 @@ a:hover {
   font-weight: 700;
 }
 .about-us-content {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 /* ================================== */
 .container3 {
   width: 100%;
-  height: 150vh;
+  height:150vh;
 }
 .service-banner {
   width: 100%;
@@ -257,6 +258,10 @@ a:hover {
 }
 
 .service-1:hover .layer {
+  height: 100%;
+  color: #eee;
+}
+.service-1:active .layer{
   height: 100%;
   color: #eee;
 }
@@ -474,6 +479,9 @@ footer .container {
 }
 /* ===================================== */
 @media (max-width: 1400px) {
+  .navbar{
+    width: 62%;
+  }
   .container3 {
     height: auto;
   }
@@ -520,7 +528,7 @@ footer .container {
     }
     .container1-aboutUs > .left-content {
       grid-column: 1;
-      padding-left: 5rem;
+      padding-left: 3rem;
     }
     .container1-aboutUs > .left-content span {
       font-weight: 600;
@@ -528,7 +536,7 @@ footer .container {
       font-size: 2rem;
     }
     .change-service {
-      margin-top: 4rem !important;
+
       font-size: 2.5rem !important;
     }
     .service {
@@ -552,6 +560,9 @@ footer .container {
       font-size: 3rem;
       font-weight: 700;
     }
+    .change-service{
+      font-size: 20px;
+    }
     .right-image img {
       position: relative;
       left: 10%;
@@ -572,17 +583,31 @@ footer .container {
     .action-btn {
       display: none;
     }
+    .org-name{
+      position: relative;
+      top: -13%;
+    }
+    .left-content strong{
+      font-size: 17px;
+    }
     .toggle-btn {
       display: block;
     }
-
-    .dropdown-menu {
-      display: block;
+    .container1-aboutUs > .right-content {
+      left: 34%;
+      top: -18%;
     }
     .dropdown-menu.open {
+      display: block;
       left: 2rem;
-      top: 7%;
+      top: 8%;
       width: unset;
+    }
+    .container3{
+      height: auto;
+    }
+    .container4{
+      height: auto;
     }
   }
   @media (max-width: 768px) {
@@ -600,8 +625,8 @@ footer .container {
       font-weight: 700;
     }
     .container1-aboutUs > .right-content img {
-      position: relative;
-      right: 10%;
+      /* position: relative;
+      right: 10%; */
       grid-column: 2;
       border-radius: 20px;
       width: 110%;
