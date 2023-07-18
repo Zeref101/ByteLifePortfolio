@@ -1,4 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/mouldy-cheese');
+@font-face {
+  font-family: "MouldyCheese";
+  src: url("./asset/mouldy.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -51,8 +54,11 @@ a:hover {
 .action-btn-div {
   padding-right: 1rem;
 }
-.nav-logo{
-  font-family: 'Mouldy Cheese', sans-serif !important;
+.nav-logo {
+  font-family: "Mouldy Cheese", sans-serif !important;
+}
+.bytlife-logo {
+  width: 25%;
 }
 .navbar .nav-logo a {
   font-size: 2rem;
@@ -140,6 +146,9 @@ a:hover {
   color: #176b87;
   font-size: 2rem;
 }
+.org-name{
+  font-family: "MouldyCheese", sans-serif;
+}
 .container1-aboutUs > .right-content img {
   grid-column: 2;
   border-radius: 20px;
@@ -189,8 +198,8 @@ a:hover {
 /* ================================== */
 .container3 {
   width: 100%;
-  height:150vh;
-  font-weight: 600
+  height: 150vh;
+  font-weight: 600;
 }
 .service-banner {
   width: 100%;
@@ -265,7 +274,7 @@ a:hover {
   height: 100%;
   color: #000047;
 }
-.service-1:active .layer{
+.service-1:active .layer {
   height: 100%;
   color: #000047;
 }
@@ -300,11 +309,10 @@ a:hover {
   height: 100%;
   color: #000047;
 }
-.service-2:active .layer{
+.service-2:active .layer {
   height: 100%;
   color: #000047;
 }
-
 
 .service-2 img {
   transform: scale(1.1);
@@ -336,11 +344,10 @@ a:hover {
   height: 100%;
   color: #000047;
 }
-.service-3:active .layer{
+.service-3:active .layer {
   height: 100%;
   color: #000047;
 }
-
 
 .service-3 img {
   transform: scale(1.1);
@@ -349,7 +356,7 @@ a:hover {
   font-size: 2rem;
   font-weight: 700;
   z-index: 10;
-  color:#eee ;
+  color: #eee;
 }
 /* ======================================== */
 .container4 {
@@ -494,7 +501,7 @@ footer .container {
 }
 /* ===================================== */
 @media (max-width: 1400px) {
-  .navbar{
+  .navbar {
     width: 62%;
   }
   .container2 {
@@ -554,7 +561,6 @@ footer .container {
       font-size: 2rem;
     }
     .change-service {
-
       font-size: 2.5rem !important;
     }
     .service {
@@ -578,7 +584,7 @@ footer .container {
       font-size: 3rem;
       font-weight: 700;
     }
-    .change-service{
+    .change-service {
       font-size: 20px;
     }
     .right-image img {
@@ -597,15 +603,18 @@ footer .container {
     .navbar {
       width: 60%;
     }
+    .bytlife-logo {
+      width: 37%;
+    }
     .links,
     .action-btn {
       display: none;
     }
-    .org-name{
+    .org-name {
       position: relative;
       top: -13%;
     }
-    .left-content strong{
+    .left-content strong {
       font-size: 17px;
     }
     .toggle-btn {
@@ -621,10 +630,10 @@ footer .container {
       top: 8%;
       width: unset;
     }
-    .container3{
+    .container3 {
       height: auto;
     }
-    .container4{
+    .container4 {
       height: auto;
     }
   }
@@ -634,6 +643,9 @@ footer .container {
     }
     .navbar {
       width: 64%;
+    }
+    .bytlife-logo {
+      width: 45%;
     }
     .dropdown-menu {
       left: 2rem;
@@ -645,10 +657,10 @@ footer .container {
       font-size: 2.6rem !important;
       font-weight: 700;
     }
-    .left-content strong{
+    .left-content strong {
       font-size: 30px;
     }
-    .change-service{
+    .change-service {
       font-size: 25px !important;
     }
     .container1-aboutUs > .right-content img {
@@ -687,7 +699,7 @@ footer .container {
       width: 173%;
       height: 200px;
     }
-  
+
     .change-service {
       font-size: 30px !important;
     }
@@ -764,6 +776,9 @@ footer .container {
 @media (max-width: 576px) {
   html {
     overflow-x: hidden;
+  }
+  .bytlife-logo {
+    width: 50%;
   }
   .navbar {
     width: 65%;
@@ -896,9 +911,12 @@ footer .container {
     width: 169%;
   }
 }
-@media(max-width: 376px){
-  html{
+@media (max-width: 376px) {
+  html {
     overflow-x: hidden !important;
+  }
+  .bytlife-logo {
+    width: 60%;
   }
   .container1-aboutUs > .left-content {
     width: 148%;
