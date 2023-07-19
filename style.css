@@ -88,6 +88,8 @@ a:hover {
   cursor: pointer;
   transition: scale 0.3s ease;
   padding-right: 1rem;
+  position: relative;
+  left: -1%;
 }
 .action-btn:hover {
   scale: 1.05;
@@ -146,7 +148,7 @@ a:hover {
   color: #176b87;
   font-size: 2rem;
 }
-.org-name{
+.org-name {
   font-family: "MouldyCheese", sans-serif;
 }
 .container1-aboutUs > .right-content img {
@@ -187,7 +189,14 @@ a:hover {
 }
 .container2 > .container2-main-right {
   grid-column: 2;
+  position: relative;
+  left: 50%;
 }
+.container2-main-right {
+  position: relative;
+  left: -10%;
+}
+
 .about-us {
   color: #64ccc5;
   font-weight: 700;
@@ -228,12 +237,13 @@ a:hover {
   display: grid;
   margin-top: 10rem;
   grid-template-columns: 1fr 1fr 1fr;
+  color: white;
 }
 .container3-main > .service-1 {
   background-image: url(./asset/29d90b183be6d21ba0f72d53f66409a3.jpg);
   background-size: 100%;
-  width: 500px;
-  height: 500px;
+  width: 420px;
+  height: 420px;
   margin: auto;
   border-radius: 20px;
   display: flex;
@@ -255,7 +265,7 @@ a:hover {
   height: 0;
   width: 100%;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), #64ccc5);
+  background: linear-gradient(rgba(100, 204, 197, 0.85), rgb(0, 0, 0));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -272,11 +282,11 @@ a:hover {
 
 .service-1:hover .layer {
   height: 100%;
-  color: #000047;
+  color: white;
 }
 .service-1:active .layer {
   height: 100%;
-  color: #000047;
+  color: white;
 }
 
 .service-1 img {
@@ -285,8 +295,8 @@ a:hover {
 .container3-main > .service-2 {
   background-image: url(./asset/bytetalk.jpeg);
   background-size: 100%;
-  width: 500px;
-  height: 500px;
+  width: 420px;
+  height: 420px;
   margin-right: 3rem;
   margin-left: 3rem;
   border-radius: 20px;
@@ -307,19 +317,19 @@ a:hover {
 }
 .service-2:hover .layer {
   height: 100%;
-  color: #000047;
+  color: white;
 }
 .service-2:active .layer {
   height: 100%;
-  color: #000047;
+  color: white;
 }
 
 .service-2 img {
   transform: scale(1.1);
 }
 .container3-main > .service-3 {
-  width: 500px;
-  height: 500px;
+  width: 420px;
+  height: 420px;
   margin: auto;
   background-image: url(./asset/15-mobile-app-development.png);
   background-position: 50%;
@@ -342,11 +352,11 @@ a:hover {
 }
 .service-3:hover .layer {
   height: 100%;
-  color: #000047;
+  color: white;
 }
 .service-3:active .layer {
   height: 100%;
-  color: #000047;
+  color: white;
 }
 
 .service-3 img {
@@ -357,6 +367,8 @@ a:hover {
   font-weight: 700;
   z-index: 10;
   color: #eee;
+  text-shadow: 1px 1px 2px #333, 0 0 1em #64ccc5, 0 0 0.2em #176b87;
+  margin-bottom: 1rem;
 }
 /* ======================================== */
 .container4 {
@@ -500,9 +512,49 @@ footer .container {
   }
 }
 /* ===================================== */
+@media(max-width: 1632px){
+  .right-image img {
+    position: relative;
+    left: 0%;
+    width: 60%;
+  }
+  .service {
+    position: relative;
+    left: 19%;
+    font-size: 3.7rem;
+    font-weight: 700;
+  }
+}
 @media (max-width: 1400px) {
   .navbar {
     width: 62%;
+  }
+  .links,
+  .action-btn {
+    display: none;
+  }
+  .org-name {
+    position: relative;
+    top: -13%;
+  }
+  .left-content strong {
+    font-size: 32px;
+  }
+  .service-change{
+    font-size: 35px;
+  }
+  .toggle-btn {
+    display: block;
+  }
+  .dropdown-menu.open {
+    display: block;
+    left: 2rem;
+    top: 8%;
+    width: unset;
+  }
+  .container2-main-right {
+    position: relative;
+    left: 0%;
   }
   .container2 {
     height: auto;
@@ -620,15 +672,15 @@ footer .container {
     .toggle-btn {
       display: block;
     }
-    .container1-aboutUs > .right-content {
-      left: 34%;
-      top: -18%;
-    }
     .dropdown-menu.open {
       display: block;
       left: 2rem;
       top: 8%;
       width: unset;
+    }
+    .container1-aboutUs > .right-content {
+      left: 34%;
+      top: -18%;
     }
     .container3 {
       height: auto;
@@ -636,7 +688,98 @@ footer .container {
     .container4 {
       height: auto;
     }
+    .container1-aboutUs {
+      position: absolute;
+      top: 21%;
+      width: 100%;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      color: #fff;
+      font-size: 1.3rem;
+    }
+    .container1-aboutUs > .left-content {
+      grid-row: 1;
+      width: 173%;
+      height: 200px;
+
+    }
+
+    .change-service {
+      position: relative;
+      top: 6%;
+      font-size: 25px !important;
+    }
+    .left-content strong{
+      font-size: 30px;
+    }
+    .right-content {
+      margin-top: 2rem;
+    }
+    .container1-aboutUs > .right-content {
+      position: relative;
+      left: 30%;
+      grid-row: 2;
+      border-radius: 20px;
+      top: -50%;
+      width: 130%;
+      font-size: 1rem;
+    }
+    .container2-main {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+    .container2-main > .container2-main-left {
+      grid-row: 2;
+      padding-left: 7rem;
+      float: right;
+      width: 100%;
+      left: 25%;
+      position: relative;
+    }
+    .container2 > .container2-main-right {
+      grid-row: 1;
+    }
+    .container2-main-right .about-us-content {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+      width: 194%;
+      padding: 1.3rem;
+    }
+    .about-us {
+      left: 50%;
+      position: relative;
+      font-size: 2rem;
+    }
+    .container2-main > .container2-main-left img {
+      width: 100%;
+    }
+    .right-image img {
+      width: 67% !important;
+      left: 30%;
+    }
+    .goal-content {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+    .goal {
+      grid-row: 1;
+      width: 170%;
+      padding: 0rem;
+      font-size: 1.3rem !important;
+      margin-left: 2rem !important;
+    }
+    .goal span {
+      font-size: 2rem;
+    }
+    .goal-content img {
+      grid-row: 2;
+      width: 125%;
+      position: relative;
+      right: 70%;
+      top: 15%;
+    }
   }
+  
   @media (max-width: 768px) {
     html {
       overflow-x: hidden;
