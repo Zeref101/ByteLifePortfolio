@@ -40,7 +40,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 63%;
   height: 3.75rem;
   margin: 0 auto;
   max-width: 75rem;
@@ -971,8 +971,8 @@ footer .container {
     grid-row: 2;
     padding-left: 7rem;
     float: right;
-    width: 128%;
-    left: -21%;
+    width: 100%;
+    left: 0%;
     position: relative;
   }
   .container2-main > .container2-main-left img {
@@ -983,7 +983,7 @@ footer .container {
   }
   .container2-main-right .about-us-content {
     margin-top: 3rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 194%;
     padding: 1.3rem;
   }
@@ -999,6 +999,9 @@ footer .container {
     width: 80% !important;
     left: 30%;
   }
+  .container4{
+    height: auto;
+  }
   .goal-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -1010,9 +1013,14 @@ footer .container {
     font-size: 1.3rem !important;
     margin-left: 2rem !important;
   }
+  .goal{
+    font-size: 1rem !important;
+  }
   .goal span {
     font-size: 2rem;
+
   }
+
   .goal-content img {
     grid-row: 2;
     width: 200%;
@@ -1033,6 +1041,9 @@ footer .container {
   .container3-main > .service-3 {
     width: 275px !important;
     height: 275px !important;
+  }
+  .service{
+    font-size: 2rem !important;
   }
   .service-title {
     font-weight: 600;
